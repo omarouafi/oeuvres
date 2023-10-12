@@ -11,7 +11,7 @@ import {
 import FormInput from "../components/FormInput";
 import Button from "../components/Button";
 import { reset_password } from "../redux/actions/user.actions";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { isValidEmail, isValidPassword } from "../utils/validations";
 
 function ResetPassword({ navigation }) {
@@ -58,7 +58,7 @@ function ResetPassword({ navigation }) {
         </View>
 
         <Button type="primary" text={"Réinitialiser"} onPress={handle_reset_password} />
-        <Button text={"Login"} type="secondary" onPress={() => navigation.navigate("login")} />
+        <Button text={"Login"} type="secondary" onPress={() => navigation.navigate("Login")} />
      
       </View>
     </View>
