@@ -25,6 +25,7 @@ function ResetPassword({ navigation }) {
       return;
     }
     dispatch(reset_password(body));
+    navigation.navigate("Login");
     
   }
 
